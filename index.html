@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfect Gift Finder</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+
+<body class="bg-gradient-to-b from-blue-50 to-white">
+  <!-- Header Section -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Perfect Gift Finder</h1>
+      <nav class="space-x-4">
+        <button class="text-gray-600 hover:text-blue-600">How it Works</button>
+        <button class="text-gray-600 hover:text-blue-600">Sign In</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Step-by-Step Form -->
+    <div id="step-container">
+      <div id="step-1" class="step">
+        <h3>Tell us about the gift recipient</h3>
+        <label for="relationship">Relationship</label>
+        <select id="relationship">
+          <option value="">Select relationship</option>
+          <option value="spouse">Spouse/Partner</option>
+          <option value="family">Family Member</option>
+          <option value="friend">Friend</option>
+          <option value="colleague">Colleague</option>
+        </select>
+
+        <label for="closeness">How close are you?</label>
+        <select id="closeness">
+          <option value="">Select closeness</option>
+          <option value="very-close">Very Close</option>
+          <option value="close">Close</option>
+          <option value="casual">Casual</option>
+          <option value="formal">Formal</option>
+        </select>
+      </div>
+
+      <div id="step-2" class="step hidden">
+        <h3>What's the occasion?</h3>
+        <label for="occasion">Select Occasion</label>
+        <select id="occasion">
+          <option value="">Select occasion</option>
+          <option value="birthday">Birthday</option>
+          <option value="anniversary">Anniversary</option>
+          <option value="wedding">Wedding</option>
+          <option value="engagement">Engagement</option>
+          <option value="promotion">Promotion</option>
+          <option value="holiday">Holiday</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div id="step-3" class="step hidden">
+        <h3>What's your budget?</h3>
+        <label for="budget">Budget Range</label>
+        <select id="budget">
+          <option value="">Select budget range</option>
+          <option value="0-25">Under $25</option>
+          <option value="25-50">$25 - $50</option>
+          <option value="50-100">$50 - $100</option>
+          <option value="100-200">$100 - $200</option>
+          <option value="200+">$200+</option>
+        </select>
+      </div>
+
+      <div id="step-4" class="step hidden">
+        <h3>Any specific interests?</h3>
+        <label>
+          <input type="checkbox" id="tech" /> Technology
+        </label>
+        <label>
+          <input type="checkbox" id="fashion" /> Fashion
+        </label>
+        <label>
+          <input type="checkbox" id="sports" /> Sports
+        </label>
+        <label>
+          <input type="checkbox" id="books" /> Books
+        </label>
+        <label>
+          <input type="checkbox" id="music" /> Music
+        </label>
+        <label>
+          <input type="checkbox" id="art" /> Art
+        </label>
+        <label>
+          <input type="checkbox" id="travel" /> Travel
+        </label>
+        <label>
+          <input type="checkbox" id="cooking" /> Cooking
+        </label>
+      </div>
+
+      <button id="next-button">Next</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script> <!-- Link to external JS -->
+</body>
+
+</html>

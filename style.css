@@ -1,0 +1,51 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.step {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select, input[type="checkbox"] {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3b82f6;
+}
+
+/* For smaller screens */
+@media (max-width: 600px) {
+  .step {
+    padding: 15px;
+  }
+}
